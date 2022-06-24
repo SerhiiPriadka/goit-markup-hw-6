@@ -249,10 +249,9 @@ color: #2196f3;
   border-radius: 4px;
   background: var(--second-cl);
   cursor: pointer;
-}
-.hero-btn-color {
   color: var(--secondary-txt);
 }
+
 
 .title {
   margin-bottom: 50px;
@@ -754,4 +753,77 @@ display: block;
 .modal-icon{
   width: 18px;
   height: 18px;
+}
+
+/* Формы для модалки */
+
+.modal-form{
+  text-align: center;
+  margin: 40px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-input label{
+  margin-bottom: 4px;
+}
+
+.input{
+ 
+  width: 100%;
+  height: 100%;
+ 
+
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+  transition: border var(--anim),
+              border-radius var(--anim);
+}
+
+.input:hover,
+.input:focus{
+  border: 1px solid var(--second-cl);
+  border-radius: 4px;
+}
+
+.form-textarea{
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  outline: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 0,85px;
+
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+
+  transition: border var(--anim),
+              border-radius var(--anim);
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-textarea:hover,
+.form-textarea:focus,
+.form-textarea:not(:placeholder-shown){
+  
+  border: 1px solid var(--second-cl);
+  border-radius: 4px;
+}
+
+.form-textarea:focus::placeholder{
+  font-size: 14px;
+  line-height: 0,88px;
+  
 }
